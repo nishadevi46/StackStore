@@ -15,12 +15,13 @@ font-size:unset;
 const Seacrhiconwrapper=styled(SearchIcon)`
 color:blue;
 padding:5px;
+display:flex;
 `
 const Search = ()=>{
     return (
  
         <SearchContainer>
-        <InputSearchBase placeholder="search "/>
+        <InputSearchBase placeholder="Search for products, brand and more"/>
         <Seacrhiconwrapper>
             <SearchIcon/>
         </Seacrhiconwrapper>
