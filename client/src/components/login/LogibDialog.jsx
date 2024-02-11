@@ -1,6 +1,6 @@
 import {Dialog, Box, TextField, Typography, Button, styled} from '@mui/material'
 import { useState } from 'react'
-
+import { authenticateSignUp } from '../../service/api'
 const Componenet = styled(Box)`
   height:80vh;
   width:60vh;
@@ -75,8 +75,8 @@ const LoginDialog = ({open, setOpen})=>{
     const onInputchange = (e)=>{
         setSignup({...signup, [e.target.name]:e.target.value})
     }
-    const signupUser=()=>{
-        
+    const signupUser=async()=>{
+       let response = await authenticateSignUp(signup)
     }
     return(<>
         <Dialog open={open} onClose={handleClose} PaperProps={{sx:{maxwidth:'unset'}}}>
