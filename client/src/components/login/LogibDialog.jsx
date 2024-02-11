@@ -1,6 +1,7 @@
 import {Dialog, Box, TextField, Typography, Button, styled} from '@mui/material'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { authenticateSignUp } from '../../service/api'
+import { DataContext } from '../../context/DataProvider'
 const Componenet = styled(Box)`
   height:80vh;
   width:60vh;
@@ -64,6 +65,7 @@ const LoginDialog = ({open, setOpen})=>{
  
     const [account, toggleAccount]=useState(accountInitialValues.login)
     const [signup, setSignup] = useState(signupIntialValue)
+    const {setAccount} = useContext(DataContext)
 
     const handleClose = ()=>{
         setOpen(false)
@@ -79,6 +81,7 @@ const LoginDialog = ({open, setOpen})=>{
        let response = await authenticateSignUp(signup)
        if(!response)return;
        handleClose()
+       setAccount(signup.firstname)
     }
     return(<>
         <Dialog open={open} onClose={handleClose} PaperProps={{sx:{maxwidth:'unset'}}}>
