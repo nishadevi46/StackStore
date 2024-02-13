@@ -25,6 +25,13 @@ const LoginButton = styled(Button)`
  border-radius:2px;
 
 `
+const Error = styled(Typography)`
+font-size:10px;
+color:#B70404;
+line-height:0;
+margin-Top:10px;
+font-weight:600;
+`
 const RequestOtp = styled(Button)`
  text-transform:none;
  background:#EEF0E5;
@@ -70,11 +77,13 @@ const LoginDialog = ({ open, setOpen }) => {
     const [account, toggleAccount] = useState(accountInitialValues.login)
     const [login,setLogin]=useState(loginIntialValue)
     const [signup, setSignup] = useState(signupIntialValue)
+    const [error,setError] = useState(false)
     const { setAccount } = useContext(DataContext)
-
+  
     const handleClose = () => {
         setOpen(false)
         toggleAccount(accountInitialValues.login)
+        setError(false)
     }
     const toggleSignup = () => {
         toggleAccount(accountInitialValues.signup)
@@ -98,13 +107,17 @@ const LoginDialog = ({ open, setOpen }) => {
         handleClose();
         setAccount(response.data.data.firstname)
     }
+    else{
+       setError(true)
+    }
     }
     return (<>
         <Dialog open={open} onClose={handleClose} PaperProps={{ sx: { maxwidth: 'unset' } }}>
             <Componenet>
                 {account.view === 'login' ? <Wrapper>
                     <Typography>Welcome to access account</Typography>
-                    <TextField variant='standard' label='Enter Email/Mobile number' onChange={(e) => onValuechange(e)} name='username' />
+                    <TextField variant='standard' label='Enter Username' onChange={(e) => onValuechange(e)} name='username' />
+                   { error && <Error>Please enter valid username or password</Error>}
                     <TextField variant='standard' label='Enter Password'
                         onChange={(e) => onValuechange(e)} name='password'
                     />
