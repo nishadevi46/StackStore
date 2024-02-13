@@ -29,7 +29,7 @@ height:32px;
 `
 const CustomButton =()=>{
     const [open, setOpen] = useState(false);
-    const {account} = useContext(DataContext)
+    const {account,setAccount} = useContext(DataContext)
    const openDialog = ()=>{
         setOpen(true)
     }
@@ -37,7 +37,7 @@ const CustomButton =()=>{
     return (
         <Wrapper>
         {
-            account ? <Profile account={account}/>:
+            account ? <Profile account={account} setAccount={setAccount}/>:
             <LoginButton variant="contained" onClick={()=>{openDialog()}}>login</LoginButton>
         }
             <Typography style={{marginTop:3, width:135 }}>become a seller</Typography>
