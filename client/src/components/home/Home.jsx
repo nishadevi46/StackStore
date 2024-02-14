@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import NavBar from './NavBar';
 import Banner from './Banner';
+
 import { Box, styled } from '@mui/material';
 import { getProducts } from '../../redux/actions/productActions';
 import {useDispatch, useSelector} from 'react-redux'
