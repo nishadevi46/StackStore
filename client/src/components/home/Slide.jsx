@@ -55,7 +55,7 @@ background-color:#191717;
   font-size:13px;
   font-weight:600;
   `
-const Slide = ({products})=>{
+const Slide = ({products, title, timer})=>{
     const timerURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg';
     const renderer = ({ hours, minutes, seconds}) => {
         return <Box variant='span'>{hours} : {minutes} : {seconds}Left</Box>
@@ -63,9 +63,9 @@ const Slide = ({products})=>{
       
     return (
         <Componenet>
-        <Deal><DealText>Deal of the Day </DealText>
-        <Timer> <img src={timerURL} alt="timer" style={{width:24}}/>
-        <Countdown date={Date.now() + 5.04e+7} renderer={renderer} /></Timer>
+        <Deal><DealText>{title}</DealText>
+        {timer && <Timer> <img src={timerURL} alt="timer" style={{width:24}}/>
+        <Countdown date={Date.now() + 5.04e+7} renderer={renderer} /></Timer>}
         <ViewButton variant='contained' color='primary'>View all</ViewButton>
         </Deal>
         <Divider style={{ backgroundColor: '#fff' }}/>
@@ -86,7 +86,7 @@ const Slide = ({products})=>{
             <Image src={product.url} alt="product" />
             <Text style={{fontWeight:'bold'}}>{product.title.shortTitle}</Text>
             <Text style={{color:'#14C38E'}}>{product.discount}</Text>
-            <Text style={{color:'#DFD3C3',opacity:'.6'}}>{product.tagline}</Text>
+            <Text style={{color:'#DFD3C3'}}>{product.tagline}</Text>
             </Box>
         ))}
         </Carousel>
