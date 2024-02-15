@@ -1,5 +1,5 @@
 import { Box, styled } from "@mui/material"
-import {ImageURL} from '../constants/data'
+
 import Slide from './Slide'
 const MidSlide = ({products, title,timer})=>{
     return(
