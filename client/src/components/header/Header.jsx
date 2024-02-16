@@ -1,7 +1,7 @@
 import {AppBar, Toolbar, styled,Box} from '@mui/material'
 import Search from './Search'
 import CustomButton from './CustomButton'
-
+import { Link } from 'react-router-dom'
 import logo from '../../images/logo.png'
 
 const StyledHeader=styled(AppBar)`
@@ -16,9 +16,9 @@ const Header = ()=>{
     return (
         <StyledHeader>
             <Toolbar style={{minHeight:55}}>
-               <Box>
+               <Link to='/' style={{textDecoration:'none'}}>
               <img src={logoUrl} alt="logo" srcset=""  style={{width:100, borderRadius:10}}/>
-               </Box>
+               </Link>
                <Search/>
                <Buttonwrapper>
                 <CustomButton/>
