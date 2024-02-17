@@ -5,18 +5,26 @@ import { DataContext } from "../../context/DataProvider";
 import Profile from "./Profile";
 import LoginDialog from "../login/LogibDialog";
 
-const Wrapper = styled(Box)`
-display:flex;
-margin:0 3% 0 auto;
-& > button, & >p, & > div{
-    margin-right:40px;
-    font-size:16px;
+const Wrapper = styled(Box)(({theme})=>({
+display:"flex",
+margin:'0 3% 0 auto',
+'& >*':{
+    marginRight:40,
+    fontSize:16,
+    alignItems:'center'
+},
+[theme.breakpoints.down('md')]:{
+    display:'block'
 }
-align-items:center;
-`
-const Container = styled(Box)`
-display:flex;
-`
+}))
+const Container = styled(Box)(({theme})=>({
+    display:'flex',
+    [theme.breakpoints.down('md')]:{
+        display:'block'
+    }
+}))
+
+
 const LoginButton=styled(Button)`
 color:#000;
 background:#fff;

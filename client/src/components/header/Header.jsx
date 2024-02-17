@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {AppBar, Toolbar, styled,Box, Drawer,  IconButton} from '@mui/material'
+import {AppBar, Toolbar, styled,Box, Drawer,List, ListItem,  IconButton} from '@mui/material'
 import Search from './Search'
 import CustomButton from './CustomButton'
 import { Link } from 'react-router-dom'
@@ -22,22 +22,34 @@ display:'none',
 }
 }))
 
+
+
 const Header = ()=>{
     const logoUrl=`${logo}`
     const [open, setOpen] = useState(false);
     const handleOpen = ()=>{
-     
+      setOpen(true);
     }
     const handleClose = ()=>{
-     
+      setOpen(false);
     }
+    
+const list = ()=>(
+    <Box style={{width:200}} onClick={handleClose}>
+       <List>
+         <ListItem button>
+            <CustomButton/>
+         </ListItem>
+       </List>
+    </Box>
+ )
     return (
         <StyledHeader>
             <Toolbar style={{minHeight:55}}>
             <MenuButton style={{color:'#FFF8E3'}} onClick={handleOpen}>
                 <Menu/>
             </MenuButton>
-            <Drawer open={open} onClose={handleClose}></Drawer>
+            <Drawer open={open} onClose={handleClose}>{list()}</Drawer>
                <Link to='/' style={{textDecoration:'none'}}>
               <img src={logoUrl} alt="logo" srcset=""  style={{width:100, borderRadius:10}}/>
                </Link>
