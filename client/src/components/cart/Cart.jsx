@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import {Grid,Typography,Box} from '@mui/material'
+import CartItem from './CartItem'
 const Cart = ()=>{
   const {cartItems} = useSelector(state => state.cart)
   return (
@@ -14,7 +15,9 @@ const Cart = ()=>{
             </Typography>
           </Box>
           {
-            cartItems.map(item =>() )
+            cartItems.map(item =>(
+              <CartItem/>
+            ) )
           }
         </Grid>
         <Grid item lg={3} md={3} sm={12} xs={12}></Grid>
