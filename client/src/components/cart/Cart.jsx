@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import {Grid,Typography,Box, styled, Button} from '@mui/material'
 import CartItem from './CartItem'
+import EmptyCart from './EmptyCart';
 import TotalView from './TotalView'
 const Container = styled(Grid)`
 padding:30px 135px;
@@ -50,7 +51,7 @@ const Cart = ()=>{
         </Grid>
         </Container>
         :
-        <div>Empty</div>
+       <EmptyCart/>
        }
     </>
   )

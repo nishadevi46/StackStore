@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import { Box, Typography,Button } from "@mui/material";
 import { addEllipis } from "../../utlis/common-utlis";
+import {removeFromCart} from '../../redux/actions/cartAction'
+import {useDispatch} from 'react-redux'
 import GroupedButton from "./ButtonGroup";
 const Container = styled(Box)`
 border-top: 1px solid black;
@@ -24,6 +26,10 @@ margin-top:10px;
 
 `
 const   CartItem = ({item})=>{
+  const dispatch = useDispatch()
+  const removeItemFromCart =(id)=>{
+    dispatch(removeFromCart(id))
+  }
     return(
     <Container>
         <LeftComponent>
@@ -38,7 +44,7 @@ const   CartItem = ({item})=>{
               <Box component="span" style={{ color: '#F72798' }}><strike> ₹{item.price.mrp}</strike></Box>&nbsp;&nbsp;&nbsp;
               <Box component="span" style={{ color: '#0D9276' }}> {item.price.discount}</Box>
               </Typography>
-              <Remove variant="contained">Remove</Remove>
+              <Remove variant="contained" onClick={()=>removeItemFromCart(item.id)}>Remove</Remove>
         </Box>
     </Container>
     )
