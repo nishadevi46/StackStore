@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import {Grid,Typography,Box, styled, Button} from '@mui/material'
 import CartItem from './CartItem'
+import { useNavigate } from "react-router-dom";
 import EmptyCart from './EmptyCart';
 import TotalView from './TotalView'
 const Container = styled(Grid)(({theme})=>({
@@ -34,7 +35,11 @@ const LeftComponent = styled(Grid)(({theme})=>({
   }
 }))
 const Cart = ()=>{
+  const navigate = useNavigate();
   const {cartItems} = useSelector(state => state.cart)
+  const buyNow = ()=>{
+    navigate('/payment')
+   }
   return (
     <>
        {
@@ -51,7 +56,7 @@ const Cart = ()=>{
             ) )
           }
           <ButtonWrapper>
-            <StyledButton  variant='contained'>Place Order
+            <StyledButton  variant='contained' onClick={()=>buyNow()}>Place Order
             </StyledButton>
           </ButtonWrapper>
         </LeftComponent>
