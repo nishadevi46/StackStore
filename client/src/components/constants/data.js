@@ -1,3 +1,8 @@
+
+import Image1 from '../../images/banner1.jpg'
+import Image2 from '../../images/banner2.jpg'
+import Image3 from '../../images/banner3.jpg'
+import Image4 from '../../images/banner4.jpg'
 export const navData = [
     { url: 'https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100', text: 'Top Offers' },
     { url: 'https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100', text: 'Grocery' },
@@ -11,10 +16,10 @@ export const navData = [
 ];
 
 export const bannerData = [
-    { id: 1, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50' },
-    { id: 2, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50' },
-    { id: 3, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50' },
-    { id: 4, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/f6202f13b6f89b03.jpg?q=50' }
+    { id: 1, url: `${Image1}` },
+    { id: 2, url: `${Image2}` },
+    { id: 3, url: `${Image3}` },
+    { id: 4, url:  `${Image4}` }
 ]
  export const imageURL = [
     'https://rukminim1.flixcart.com/flap/960/960/image/2f30db9425df5cec.jpg?q=50',
