@@ -18,8 +18,8 @@ const responsive = {
     }
   };
   const Image = styled('img')({
-    width:'auto',
-    height:150,
+    width:165,
+    height:165,
 
   })
   const Componenet = styled(Box)`

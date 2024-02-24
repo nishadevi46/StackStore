@@ -1,65 +1,66 @@
+
 export const products = [
     { 
         id: 'product1',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        url: ' https://m.media-amazon.com/images/I/61h+3QUGQKL._AC_UY327_FMwebp_QL65_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/71BBFhwd7lS._SX679_.jpg',
         title: {
             shortTitle: 'Home & Kitchen',
-            longTitle: 'Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)'
+            longTitle: 'GREENCHEF Stainless Steel Melon Mixer Grinder, 600W, 3 Jars (Pink), 600 Watt'
         }, 
         price: {
-            mrp: 1195,
-            cost: 625,
-            discount: '47%'
+            mrp: 2999,
+            cost: 1849,
+            discount: '38%'
         },
         quantity: 1,
-        description: 'This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.',
+        description: 'Greenchef Melon mixer grinder is equipped with a powerful motor. With every usage, you get to experience smooth and fast blending. The mixer comes with 3 stainless steel jars and is fitted with a powerful 600-watt motor. This mixer grinder has special blades that lift the food and grind it at the same time, to create a fine blend of its contents destroying lumps.',
         discount: 'Extra 10% Off', 
         tagline: 'Deal of the day' 
     },
     { 
         id: 'product2',
-        url: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70',
+        url: 'https://m.media-amazon.com/images/I/51fp48N3DnL._AC_UL480_FMwebp_QL65_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/51fp48N3DnL._SX679_.jpg',
         title: {
-            shortTitle: 'Sandwich Makers',
-            longTitle: 'Flipkart SmartBuy Sandwich 01 Grill  (Black)'
+            shortTitle: 'Beauty',
+            longTitle: 'Vaseline Deep Moisture Serum In Lotion, 400 ml | Enriched with Glycerin for Nourished Soft Skin'
         },
         price: {
-            mrp: 1499,
-            cost: 899,
-            discount: '40%'
+            mrp: 375,
+            cost: 280,
+            discount: '25%'
         },
         quantity: 1,
-        description: 'This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better',
+        description: 'The Vaseline Deep Moisture Serum In Lotion is the solution for moisturized and soft skin from layers within. With its specialized formula, this lotion is designed to deeply nourish dry and rough skin, providing long-lasting hydration and comfort. Every day, your skin is exposed to damaging environmental factors like extreme temperatures, low humidity, harsh cleansers, and hot water, all that can make your skin feel dry.',
         discount: 'From 99+5% Off', 
-        tagline: 'Pestige, Nova & more' 
+        tagline: 'Vaseline' 
     },
     { 
         id: 'product3',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        url: 'https://m.media-amazon.com/images/I/613JYxJjt2L._AC_UL320_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/613JYxJjt2L._SY695_.jpg', 
         title: {
-            shortTitle: 'Fitness Gear',
-            longTitle: 'AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)'
+            shortTitle: 'Footwear',
+            longTitle: 'Blue Tape Casual Sneaker Shoes for Men | Enhanced Comfort with Cushioned Insole and Slip-Resistant'
         }, 
         price: {
-            mrp: 499,
-            cost: 166,
-            discount: '66%'
+            mrp: 5599,
+            cost: 1399,
+            discount: '75%'
         },
         quantity: 1,
-        description: 'This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.',
+        description: 'Enhance Your Casual Look game With These White Color Lace-Up Closure Sneaker Shoes Brought To You By Blue Tape. TPR bed Sole Gives You All-Day Comfort And Relaxation At Your Feet And The PU Upper Gives You A Great Look With A Cool Experience. The Casual Looks Cooler With The Round Shape Of the Toe.',
         discount: 'Upto 70% Off', 
         tagline: 'Deal of the Day' 
     },
     { 
         id: 'product4',
-        url: 'https://rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70',
+        url: 'https://m.media-amazon.com/images/I/711NXCmUfbL._AC_UL320_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/711NXCmUfbL._SX679_.jpg',
         title: {
-            shortTitle: 'Smart Watches',
-            longTitle: 'Molife Sense 500 Smartwatch  (Black Strap, Freesize)',
+            shortTitle: 'Watches',
+            longTitle: 'Titan’s Analog Watch For Men| With Best- Quality Leather Strap| Time & Date Watc| Round Dial Watch|| High-Quality Watch| Water Resistant| Silver Dial| Brown Color',
         }, 
         price: {
             mrp: 6999,
@@ -67,35 +68,35 @@ export const products = [
             discount: '42%'
         },
         quantity: 1,
-        description: 'The Molife Sense 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges. Thanks to seamless Bluetooth 5.0 connectivity, you wont have to keep waiting. Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.',
+        description: 'Titan’s Analog Watch 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges.  Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.',
         discount: 'Grab Now', 
         tagline: 'Best Seller' 
     },
     { 
         id: 'product5',
-        url: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70', 
+        url: 'https://m.media-amazon.com/images/I/614ntlRKsjL._AC_UL480_FMwebp_QL65_.jpg',
+        detailUrl: 'https://m.media-amazon.com/images/I/614ntlRKsjL._SY695_.jpg', 
         title: {
-            shortTitle: 'Trimmers, Dryers & more',
-            longTitle: 'Nova Professional NHP 8220 Hair Dryer  (1800 W, Multicolor)'
+            shortTitle: 'Earrings',
+            longTitle: 'Zaveri Pearls Pink & Purple Enamel Kundan Ethnic Jhumki Earring For Women'
         }, 
         price: {
-            mrp: 1899,
-            cost: 1124,
-            discount: '40%'
+            mrp: 1995,
+            cost: 339,
+            discount: '80%'
         },
         quantity: 1,
-        description: '',
-        discount: 'From ₹499', 
-        tagline: 'Kubra, Nova & more' 
+        description: 'The festive season is here! Are you ready to flaunt a little sparkle this festive season? We have got you covered with our must-have earrings for this season! Its the time to stock up gorgeous fashion jewellery for your ethnic outfits and avoid any last minute fashion-hassle!',
+        discount: 'From ₹300', 
+        tagline: 'Zaveri Pearls' 
     },
     { 
         id: 'product6',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70', 
+        url: 'https://m.media-amazon.com/images/I/516QpOJnA5L._AC_UL480_FMwebp_QL65_.jpg',
+        detailUrl: '	https://m.media-amazon.com/images/I/516QpOJnA5L._SX679_.jpg', 
         title: {
-            shortTitle: 'Table Fans',
-            longTitle: 'Portable 300 mm Ultra High Speed 3 Blade Table Fan  (Black, Pack of 1)'
+            shortTitle: 'Gown',
+            longTitle: 'Hopscotch Girls Polyester and Viscose Sequin Embellished Gown in Blue Color'
         }, 
         price: {
             mrp: 2250,
@@ -103,26 +104,26 @@ export const products = [
             discount: '46%'
         },
         quantity: 1,
-        description: 'Table Fan. Perfect size fan for use on a table, desk or in an RV. Whisper quiet, powerful airflow and reliable operation in a compact 6" size. Two adjustable speeds to customize airflow: high or low settings. Tough break-resistant ABS plastic blades. ',
-        discount: 'Minimum 40% Off', 
+        description: 'We re Hopscotch, Indias largest kids’ fashion brand. From playtime to bedtime. From infancy to childhood. And everything in between. We curate the most fashionable and on-trend head-to-toe looks for every kid, every occasion, and every moment of childhood.', 
+        discount: 'From ₹1300', 
         tagline: 'Top Selling' 
     },
     { 
         id: 'product7',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70', 
+        url: 'https://m.media-amazon.com/images/I/51TAaJoFDjL._AC_UL480_FMwebp_QL65_.jpg',
+        detailUrl: '	https://m.media-amazon.com/images/I/51TAaJoFDjL._SX679_.jpg', 
         title: {
-            shortTitle: 'Headphones',
-            longTitle: 'boAt Rockerz 235v2 with ASAP charging Version 5.0 Bluetooth Headset '
+            shortTitle: 'Trolley Bag',
+            longTitle: 'Nasher Miles Venice Hard-Sided Polycarbonate Cabin Luggage Terrazzo Printed Black 20 inch |55cm Trolley Bag '
         }, 
         price: {
-            mrp: 2990,
-            cost: 1199,
-            discount: '59%'
+            mrp: 14995,
+            cost: 3298,
+            discount: '78%'
         },
         quantity: 1,
-        description: 'Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.',
+        description: 'Introducing the Terrazzo Collection, featuring a stylish and elegant design. This is a Carry-On (20 Inch) Luggage, ideal for hassle-free travel with its compact size and is perfect for short trips and as a carry-on option.',
         discount: 'Minimum 50% Off', 
-        tagline: 'Grab Now!' 
+        tagline: 'Limited time deal' 
     }
 ];
