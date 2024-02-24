@@ -51,7 +51,7 @@ background-color:#191717;
   `
   const ViewButton = styled(Button)`
   margin-left:auto;
-  background-color:#50577A;
+  background-color:#1F2544;
   border-radius:2px;
   font-size:13px;
   font-weight:600;
