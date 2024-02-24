@@ -13,8 +13,9 @@ const Component = styled(Box)`
   margin-top:55px;
 `
 const Container = styled(Grid)(({theme})=>({
-  background:'#B5C0D0',
+  background:'#F0F0F0',
    display:'flex',
+   minHeight:'93vh',
    [theme.breakpoints.down('md')]:{
     margin:0
    }

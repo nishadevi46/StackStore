@@ -45,16 +45,16 @@ const ProductDetail = ({product})=>{
            <Table>
             <TableBody>
                 <ColumnText>
-                    <TableCell style ={{color:'#F5EEE6'}}>Delivery</TableCell>
-                    <TableCell style={{fontWeight:600, color:'#F5EEE6'}}>Delivery by {date.toDateString()} | ₹50</TableCell>
+                    <TableCell style ={{color:'#071952'}}>Delivery</TableCell>
+                    <TableCell style={{fontWeight:600, color:'#071952'}}>Delivery by {date.toDateString()} | ₹50</TableCell>
                 </ColumnText>
                 <ColumnText>
-                    <TableCell style ={{color:'#F5EEE6'}}>Warranty</TableCell>
-                    <TableCell style={{color:'#F5EEE6'}}>No Warranty</TableCell>
+                    <TableCell style ={{color:'#071952'}}>Warranty</TableCell>
+                    <TableCell style={{color:'#071952'}}>No Warranty</TableCell>
                 </ColumnText>
                 <ColumnText>
-                    <TableCell style ={{color:'#F5EEE6'}}>Seller</TableCell>
-                    <TableCell style={{fontWeight:600, color:'#F5EEE6'}}>
+                    <TableCell style ={{color:'#071952'}}>Seller</TableCell>
+                    <TableCell style={{fontWeight:600, color:'#071952'}}>
                         <Box component='span' style={{color:'#280274'}}>
                         Owago Limited
                         </Box>
@@ -64,8 +64,8 @@ const ProductDetail = ({product})=>{
                 </ColumnText>
 
                 <ColumnText>
-                    <TableCell style ={{color:'#F5EEE6'}}>Description</TableCell>
-                    <TableCell style={{fontWeight:600, color:'#F5EEE6'}}>{product.description}</TableCell>
+                    <TableCell style ={{color:'#071952'}}>Description</TableCell>
+                    <TableCell style={{fontWeight:600, color:'#071952'}}>{product.description}</TableCell>
                 </ColumnText>
             </TableBody>
            </Table>
