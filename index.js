@@ -14,13 +14,14 @@ app.use(bodyParser.json({extended:true}))
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
 app.use('/',Router);
-// app.use(express.static(path.join(__dirname, "./client/build")))
-// app.get('*', function(_, res){
-//     res.sendFile(path.join(__dirname, "./client/build/index.html"), function(error){
-//         res.status(500).send(err);
-//     })
-// })
-const PORT =process.env.port||8000;
+
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.get('*', function(_, res){
+    res.sendFile(path.join(__dirname, "./client/build/index.html"), function(err){
+        res.status(500).send(err);
+    })
+})
+const PORT = process.env.PORT||8000;
 const USERNAME=process.env.DB_USERNAME
 const PASSWORD=process.env.DB_PASSWORD
 const URL= process.env.MONGODB_URI||`mongodb://${USERNAME}:${PASSWORD}@ac-awssnjf-shard-00-00.httd4nz.mongodb.net:27017,ac-awssnjf-shard-00-01.httd4nz.mongodb.net:27017,ac-awssnjf-shard-00-02.httd4nz.mongodb.net:27017/?ssl=true&replicaSet=atlas-k9wys6-shard-0&authSource=admin&retryWrites=true&w=majority`
