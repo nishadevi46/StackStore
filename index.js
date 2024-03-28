@@ -7,8 +7,9 @@ import DefaultData from './default.js';
 import Router from './router/route.js'
 import path from 'path'
 const __dirname = path.resolve();
-const app =express()
 dotenv.config()
+const app =express()
+
 app.use(bodyParser.json({extended:true}))
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
@@ -22,6 +23,7 @@ app.get('*', function(_, res){
 const PORT = 8000||process.env.port;
 const USERNAME=process.env.DB_USERNAME
 const PASSWORD=process.env.DB_PASSWORD
-Connection(USERNAME,PASSWORD)
+const URL= process.env.MONGODB_URI||`mongodb://${USERNAME}:${PASSWORD}@ac-awssnjf-shard-00-00.httd4nz.mongodb.net:27017,ac-awssnjf-shard-00-01.httd4nz.mongodb.net:27017,ac-awssnjf-shard-00-02.httd4nz.mongodb.net:27017/?ssl=true&replicaSet=atlas-k9wys6-shard-0&authSource=admin&retryWrites=true&w=majority`
+Connection(URL)
 app.listen(PORT,console.log(`server is running fine on port${PORT}`))
 DefaultData()
