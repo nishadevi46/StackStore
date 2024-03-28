@@ -2,7 +2,7 @@
 import * as actionTypes from '../constants/productConstant'
 
 import axios from 'axios'
-const URL = ''
+const URL = 'http://localhost:8000'
 
 
 export const getProducts = ()=>async (dispatch)=>{
