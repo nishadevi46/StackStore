@@ -20,7 +20,7 @@ app.get('*', function(_, res){
         res.status(500).send(err);
     })
 })
-const PORT = 8000||process.env.port;
+const PORT =process.env.port||8000;
 const USERNAME=process.env.DB_USERNAME
 const PASSWORD=process.env.DB_PASSWORD
 const URL= process.env.MONGODB_URI||`mongodb://${USERNAME}:${PASSWORD}@ac-awssnjf-shard-00-00.httd4nz.mongodb.net:27017,ac-awssnjf-shard-00-01.httd4nz.mongodb.net:27017,ac-awssnjf-shard-00-02.httd4nz.mongodb.net:27017/?ssl=true&replicaSet=atlas-k9wys6-shard-0&authSource=admin&retryWrites=true&w=majority`
